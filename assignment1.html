@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+   <html>
+
+<head>
+	<title>Assignment 3</title>
+    <meta charset="utf-8"  />
+    <link rel="stylesheet" href="assignment1.css" type="text/css"/>
+ 
+    <!-- <style>
+        body{
+            margin-left: 10%;
+            font-weight: bold;
+
+        }
+        input{
+            margin-bottom: 20px;
+        }
+    </style> -->
+</head>
+
+<body>
+<form action="assignment1.html" style="margin-top: 50px;" >
+    <p ></p>
+    First Name:
+    <br/>
+    <input type="text" id="firstName" ></input>
+    <br/>
+    Last Name:
+    <br/>
+    <input type="text" id="lastName"></input>
+    <br/>
+    Email:
+    <br/>
+    <input type="email" id="Email"></input>
+    <br/>
+    Contact Number:
+    <br/>
+    <input type="tel" id="contactNumber" maxlength="10" minlength="10"></input>
+    <br/>
+    Address:
+    <br/>
+    <textarea id="Address" style="margin-bottom: 20px;"></textarea>
+    <br/>
+    Username:
+    <br/>
+    <input type="text" id="userName"></input>
+    <br/>
+    Password:
+    <br/>
+    <input type="password" id="password" minlength="8"></input>
+    <br/>
+    Gender:
+    <br/>
+    <input type="radio" class="Gender" id="Male" value="Male" style="margin-bottom: 0px;">
+        Male
+    </input><br/>
+    <input type="radio" class="Gender"  id="Female" value="Female">
+        Female
+    </input>
+    
+    <br/>
+
+    Qualification:
+    <br/>
+    <select name="Qualification" id="Qualification" style="margin-bottom: 20px; width: 120px;">
+        <option label="--Select--"></option>
+        <!-- <optgroup label="M.E">
+            <option value="ME/CSE" label="CSE"></option>
+            <option value="ME/IT" label="IT"></option>
+        </optgroup>
+        <optgroup label="B.E">
+            <option value="BE/CSE" label="CSE"></option>
+            <option value="BE/IT" label="IT"></option>
+        </optgroup> -->
+    </select>
+    <br/>
+
+    Experience:
+    <br/>
+    <select  id="Experience" style="margin-bottom: 20px;">
+        <option label="--Select--"></option>
+        <!-- <option value="1" label="1"></option>
+        <option value="2" label="2"></option>
+        <option value="3" label="3"></option>
+        <option value="4" label="4"></option>
+        <option value="5" label="5"></option> -->
+    </select>
+    <br/>
+
+    Coding Languages:<br/>
+    <span id="check" >
+       
+    </span>
+    <!-- <input class="check" type="checkbox" id="C" style="margin-bottom: 0px;">C/C++</input><br/>
+    <input class="check" type="checkbox" id="Java" style="margin-bottom: 0px;">Java</input><br/>
+    <input class="check" type="checkbox" id="C#" style="margin-bottom: 0px;">C#</input><br/>
+    <input class="check" type="checkbox" id="Php" style="margin-bottom: 0px;">PHP</input><br/>
+    <input class="check" type="checkbox" id="Python" style="margin-bottom: 0px;">Python</input><br/> -->
+    <br/>
+
+    <button type="submit" id="submit" onclick="submitForm()"><b>Submit</b></button><br/>
+    
+</form>
+    
+<script type="text/javascript" src="assignment1.js"></script>
+</body>
+</html>

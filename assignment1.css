@@ -1,0 +1,16 @@
+body{
+    margin-left: 10%;
+    font-weight: bold;
+
+
+}
+input{
+    margin-bottom: 20px;
+}
+
+inpu[type="checkbox"]{
+    /* vertical-align: baseline; */
+align-items: center;
+    display: flex;
+    position: relative;
+}
