@@ -53,10 +53,11 @@
     <br/>
     Gender:
     <br/>
-    <input type="radio" class="Gender" id="Male" value="Male" style="margin-bottom: 0px;">
+    
+    <input type="radio" name="Gender" class="Gender" id="Male" value="Male" style="margin-bottom: 0px;">
         Male
     </input><br/>
-    <input type="radio" class="Gender"  id="Female" value="Female">
+    <input type="radio" name="Gender" class="Gender"  id="Female" value="Female">
         Female
     </input>
     
@@ -66,14 +67,7 @@
     <br/>
     <select name="Qualification" id="Qualification" style="margin-bottom: 20px; width: 120px;">
         <option label="--Select--"></option>
-        <!-- <optgroup label="M.E">
-            <option value="ME/CSE" label="CSE"></option>
-            <option value="ME/IT" label="IT"></option>
-        </optgroup>
-        <optgroup label="B.E">
-            <option value="BE/CSE" label="CSE"></option>
-            <option value="BE/IT" label="IT"></option>
-        </optgroup> -->
+       
     </select>
     <br/>
 
@@ -81,11 +75,7 @@
     <br/>
     <select  id="Experience" style="margin-bottom: 20px;">
         <option label="--Select--"></option>
-        <!-- <option value="1" label="1"></option>
-        <option value="2" label="2"></option>
-        <option value="3" label="3"></option>
-        <option value="4" label="4"></option>
-        <option value="5" label="5"></option> -->
+   
     </select>
     <br/>
 
@@ -93,14 +83,9 @@
     <span id="check" >
        
     </span>
-    <!-- <input class="check" type="checkbox" id="C" style="margin-bottom: 0px;">C/C++</input><br/>
-    <input class="check" type="checkbox" id="Java" style="margin-bottom: 0px;">Java</input><br/>
-    <input class="check" type="checkbox" id="C#" style="margin-bottom: 0px;">C#</input><br/>
-    <input class="check" type="checkbox" id="Php" style="margin-bottom: 0px;">PHP</input><br/>
-    <input class="check" type="checkbox" id="Python" style="margin-bottom: 0px;">Python</input><br/> -->
-    <br/>
+  <br/>
 
-    <button type="submit" id="submit" onclick="submitForm()"><b>Submit</b></button><br/>
+    <button type="button" id="submit" onclick="submitForm()"><b>Submit</b></button><br/>
     
 </form>
     
