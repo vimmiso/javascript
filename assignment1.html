@@ -1,107 +1,100 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 
-   <html>
+<html>
+    <head>
+        <title>Assignment 3</title>
+        <meta charset="utf-8"  />
+        <link rel="stylesheet" href="assignment1.css" type="text/css"/>
+    </head>
 
-<head>
-	<title>Assignment 3</title>
-    <meta charset="utf-8"  />
-    <link rel="stylesheet" href="assignment1.css" type="text/css"/>
-</head>
+    <body>
+        <form action="assignment1.html" style="margin-top: 50px;" >
+            <div>
+                <label for="firstName">First Name:</label>
+                <br/>
+                <input type="text" id="firstName" ></input>
+            </div>
+            
+            <div>
+                <label for="lastName">Last Name:</label>
+                <br/>
+                <input type="text" id="lastName"></input>
+            </div>
+            
+            <div>
+                <label for="Email">Email:</label>
+                <br/>
+                <input type="email" id="Email"></input>
+            </div>
+            
+            <div>
+                <label for="contactNumber">Contact Number:</label>
+                <br/>
+                <input type="tel" id="contactNumber" maxlength="10" minlength="10"></input>
+            </div>
+            
 
-<body>
-<form action="assignment1.html" style="margin-top: 50px;" >
-    <p ></p>
-    <div>
-        <label for="firstName">First Name:</label>
-        <br/>
-        <input type="text" id="firstName" ></input>
-    </div>
-    
-    <div>
-        <label for="lastName">Last Name:</label>
-        <br/>
-        <input type="text" id="lastName"></input>
-    </div>
-    
-    <div>
-        <label for="Email">Email:</label>
-        <br/>
-        <input type="email" id="Email"></input>
-    </div>
-    
-    <div>
-        <label for="contactNumber">Contact Number:</label>
-        <br/>
-        <input type="tel" id="contactNumber" maxlength="10" minlength="10"></input>
-    </div>
-    
+            <div>
+                <label for="Address">Address:</label>
+                <br/>
+                <textarea id="Address" style="margin-bottom: 20px;"></textarea>
+            </div>
+            
+            <div>
+                <label for="userName">Username:</label>
+                <br/>
+                <input type="text" id="userName"></input>
+            </div>
+            
+            <div>
+                <label for="password">Password:</label>
+                <br/>
+                <input type="password" id="password" minlength="8"></input>
+            </div>
+            
+            <div>
+                <label for="Gender">Gender:</label>
+                <br/>
+                <input type="radio" name="Gender" class="Gender" id="Male" value="Male" style="margin-bottom: 0px;">
+                    Male
+                </input>
+                <br/>
+                <input type="radio" name="Gender" class="Gender"  id="Female" value="Female">
+                    Female
+                </input>
+                
+            </div>
+            
+            <div>
+                <label for="Qualification">Qualification:</label>
+                <br/>
+                <select name="Qualification" id="Qualification" style="margin-bottom: 20px; width: 120px;">
+                    <option label="--Select--"></option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="Experience">Experience:</label>
+                <br/>
+                <select  id="Experience" style="margin-bottom: 20px;">
+                    <option label="--Select--"></option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="check">Coding Languages:</label>
+                <br/>
+                <div id="check" >
+                </div>
+            </div>
 
-    <div>
-        <label for="Address">Address:</label>
-        <br/>
-        <textarea id="Address" style="margin-bottom: 20px;"></textarea>
-    </div>
-    
-    <div>
-        <label for="userName">Username:</label>
-        <br/>
-        <input type="text" id="userName"></input>
-    </div>
-    
-    <div>
-        <label for="password">Password:</label>
-        <br/>
-        <input type="password" id="password" minlength="8"></input>
-    </div>
-    
-    <div>
-        <label for="Gender">Gender:</label>
-        <br/>
+            <button type="button" id="submit" onclick="submitForm()">
+                <b>Submit</b>
+            </button>
+            <br/>
+        </form>
+
+        <script type="text/javascript" src="assignment1.js"></script>
         
-        <input type="radio" name="Gender" class="Gender" id="Male" value="Male" style="margin-bottom: 0px;">
-            Male
-        </input><br/>
-        <input type="radio" name="Gender" class="Gender"  id="Female" value="Female">
-            Female
-        </input>
-        
-    </div>
-    
-    <div>
-        <label for="Qualification">Qualification:</label>
-        <br/>
-        <select name="Qualification" id="Qualification" style="margin-bottom: 20px; width: 120px;">
-            <option label="--Select--"></option>
-        
-        </select>
-    </div>
-    
-
-    <div>
-        <label for="Experience">Experience:</label>
-        <br/>
-        <select  id="Experience" style="margin-bottom: 20px;">
-            <option label="--Select--"></option>
-    
-        </select>
-    </div>
-    
-    <div>
-       
-        <label for="check">Coding Languages:</label>
-        <br/>
-        <div id="check" >
-        
-        </div>
-    
-    </div>
-   
-
-    <button type="button" id="submit" onclick="submitForm()"><b>Submit</b></button><br/>
-    
-</form>
-    
-<script type="text/javascript" src="assignment1.js"></script>
-</body>
+    </body>
 </html>

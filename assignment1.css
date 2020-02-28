@@ -9,8 +9,7 @@ input{
 }
 
 inpu[type="checkbox"]{
-    /* vertical-align: baseline; */
-align-items: center;
+    align-items: center;
     display: flex;
     position: relative;
 }

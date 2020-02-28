@@ -12,47 +12,50 @@ for(var i=0;i<arr2.length;i++){
     ex.insertBefore(option,ex.lastChild);
 }
 
-    var optgrp = document.getElementById('Qualification');
+var optgrp = document.getElementById('Qualification');
     optgrp.appendChild(new Option(arr[0]));
     optgrp.appendChild(new Option(arr[1]));
     optgrp.appendChild(new Option(arr[2]));
     optgrp.appendChild(new Option(arr[3]));
     
-    function langObj(LanguageName, IsEnabled){
-        this.LanguageName = LanguageName;
-        this.IsEnabled = IsEnabled;
-        this.type="checkbox";
-        this.label=LanguageName;
-    }
-    arrlang = ["C/C++","Java","C#","Php","Python"];
-   
-    arrlang[0] = new langObj("C/C++",true);
-    arrlang[1]  = new langObj("Java",true);
-    arrlang[2]  = new langObj("C#",false);
-    arrlang[3]  = new langObj("Php",false);
-    arrlang[4]  = new langObj("Python",false);
+function langObj(LanguageName, IsEnabled){
+    this.LanguageName = LanguageName;
+    this.IsEnabled = IsEnabled;
+    this.type="checkbox";
+    this.label=LanguageName;
+}
 
 
-    var checks = document.getElementById("check");
+arrlang = ["C/C++","Java","C#","Php","Python"];
+
+arrlang[0] = new langObj("C/C++",true);
+arrlang[1]  = new langObj("Java",true);
+arrlang[2]  = new langObj("C#",false);
+arrlang[3]  = new langObj("Php",false);
+arrlang[4]  = new langObj("Python",false);
+
+
+var checks = document.getElementById("check");
 for(var i=0;i<arrlang.length;i++){
-  
+
     var ch = document.createElement("INPUT");
 
-    ch.setAttribute("type", "checkbox");
-    ch.setAttribute("name", arrlang[i].LanguageName);
-    ch.setAttribute("value", arrlang[i].IsEnabled);
-   
-     var label = document.createElement("label");
-    label.htmlFor="id";
-    label.appendChild(document.createTextNode(arrlang[i].LanguageName));
+        ch.setAttribute("type", "checkbox");
+        ch.setAttribute("name", arrlang[i].LanguageName);
+        ch.setAttribute("value", arrlang[i].IsEnabled);
+
+    var label = document.createElement("label");
+        label.htmlFor="id";
+        label.appendChild(document.createTextNode(arrlang[i].LanguageName));
     if(ch.name===arrlang[0].LanguageName || ch.name===arrlang[1].LanguageName){
         ch.checked=true;
     }
     var br = document.createElement("br");
+    
     checks.appendChild(ch);
     checks.appendChild(label);
     checks.appendChild(br);
-   
+
 }
 
 
@@ -103,7 +106,7 @@ function submitForm(){
         Experience: document.getElementById("Experience").value,
         CodingLanguages: yCod
     };
-console.log(obj);
+    console.log(obj);
 
     
 }
