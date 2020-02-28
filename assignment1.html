@@ -7,83 +7,96 @@
 	<title>Assignment 3</title>
     <meta charset="utf-8"  />
     <link rel="stylesheet" href="assignment1.css" type="text/css"/>
- 
-    <!-- <style>
-        body{
-            margin-left: 10%;
-            font-weight: bold;
-
-        }
-        input{
-            margin-bottom: 20px;
-        }
-    </style> -->
 </head>
 
 <body>
 <form action="assignment1.html" style="margin-top: 50px;" >
     <p ></p>
-    First Name:
-    <br/>
-    <input type="text" id="firstName" ></input>
-    <br/>
-    Last Name:
-    <br/>
-    <input type="text" id="lastName"></input>
-    <br/>
-    Email:
-    <br/>
-    <input type="email" id="Email"></input>
-    <br/>
-    Contact Number:
-    <br/>
-    <input type="tel" id="contactNumber" maxlength="10" minlength="10"></input>
-    <br/>
-    Address:
-    <br/>
-    <textarea id="Address" style="margin-bottom: 20px;"></textarea>
-    <br/>
-    Username:
-    <br/>
-    <input type="text" id="userName"></input>
-    <br/>
-    Password:
-    <br/>
-    <input type="password" id="password" minlength="8"></input>
-    <br/>
-    Gender:
-    <br/>
+    <div>
+        <label for="firstName">First Name:</label>
+        <br/>
+        <input type="text" id="firstName" ></input>
+    </div>
     
-    <input type="radio" name="Gender" class="Gender" id="Male" value="Male" style="margin-bottom: 0px;">
-        Male
-    </input><br/>
-    <input type="radio" name="Gender" class="Gender"  id="Female" value="Female">
-        Female
-    </input>
+    <div>
+        <label for="lastName">Last Name:</label>
+        <br/>
+        <input type="text" id="lastName"></input>
+    </div>
     
-    <br/>
+    <div>
+        <label for="Email">Email:</label>
+        <br/>
+        <input type="email" id="Email"></input>
+    </div>
+    
+    <div>
+        <label for="contactNumber">Contact Number:</label>
+        <br/>
+        <input type="tel" id="contactNumber" maxlength="10" minlength="10"></input>
+    </div>
+    
 
-    Qualification:
-    <br/>
-    <select name="Qualification" id="Qualification" style="margin-bottom: 20px; width: 120px;">
-        <option label="--Select--"></option>
+    <div>
+        <label for="Address">Address:</label>
+        <br/>
+        <textarea id="Address" style="margin-bottom: 20px;"></textarea>
+    </div>
+    
+    <div>
+        <label for="userName">Username:</label>
+        <br/>
+        <input type="text" id="userName"></input>
+    </div>
+    
+    <div>
+        <label for="password">Password:</label>
+        <br/>
+        <input type="password" id="password" minlength="8"></input>
+    </div>
+    
+    <div>
+        <label for="Gender">Gender:</label>
+        <br/>
+        
+        <input type="radio" name="Gender" class="Gender" id="Male" value="Male" style="margin-bottom: 0px;">
+            Male
+        </input><br/>
+        <input type="radio" name="Gender" class="Gender"  id="Female" value="Female">
+            Female
+        </input>
+        
+    </div>
+    
+    <div>
+        <label for="Qualification">Qualification:</label>
+        <br/>
+        <select name="Qualification" id="Qualification" style="margin-bottom: 20px; width: 120px;">
+            <option label="--Select--"></option>
+        
+        </select>
+    </div>
+    
+
+    <div>
+        <label for="Experience">Experience:</label>
+        <br/>
+        <select  id="Experience" style="margin-bottom: 20px;">
+            <option label="--Select--"></option>
+    
+        </select>
+    </div>
+    
+    <div>
        
-    </select>
-    <br/>
-
-    Experience:
-    <br/>
-    <select  id="Experience" style="margin-bottom: 20px;">
-        <option label="--Select--"></option>
+        <label for="check">Coding Languages:</label>
+        <br/>
+        <div id="check" >
+        
+        </div>
+    
+    </div>
    
-    </select>
-    <br/>
-
-    Coding Languages:<br/>
-    <span id="check" >
-       
-    </span>
-  <br/>
 
     <button type="button" id="submit" onclick="submitForm()"><b>Submit</b></button><br/>
     
